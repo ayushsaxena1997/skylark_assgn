@@ -63,8 +63,14 @@ https://drive.google.com/open?id=1TkaHpfIG10pE1ArlP4qp44pFbrSTcYan
 
 # Limitations of the model
 
-1. The point being designated as the inner point of GCP is currently the centre of the identified area. Although it approximates the location well, it needs to be developed.
+1. The point being designated as the inner point of GCP is currently the centre of the identified area. Although it approximates the location well, it needs to be developed. I couldn't deal much with it due to limited time frame available with me.
 2. The model is scale variant, i.e. can fail if the images are taken from a drastically different height.
+3. The template is taken from snap of a grassland and thus it works well on similar images. We will have to change our template if we test a drastically different geographical area.
+
+# Tasks due for improvement 
+
+1. The co-ordinates of the inner corner of the template GCP can be given manually, and then the point can be rotated to get the co-ordinates of corners in rotated arrangement. This can be done with the same OpenCV function that was used to rotate the template. Finally, the co-ordinates to the corner will be assigned according to the amount of rotation of the template which was used to identify it. This can increase our accuracy significantly.
+2. The template should be made padding independent. There is a need to find a way such that a template of arbitrary pixel size can be cut out and used for comparision. This will make our model robust towards geographical variance in the images.
 
 # Other possibilities
 
