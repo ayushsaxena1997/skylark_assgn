@@ -51,6 +51,9 @@ My outputs can be found in the repository (outputs.csv). To summarize:
 2. No GCP was detected in any negative image.
 3. Along with the correct GCP, a couple of images were also marked with one location in image which resembles a GCP, but is actually not.
 
+All the annotated pictures can be found here:
+https://drive.google.com/open?id=1TkaHpfIG10pE1ArlP4qp44pFbrSTcYan
+
 # Limitations of the model
 
 1. The point being designated as the inner point of GCP is currently the centre of the identified area. Although it approximates the location well, it needs to be developed.
