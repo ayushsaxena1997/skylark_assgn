@@ -26,6 +26,7 @@ delta: If the GCP identified is very close to the previously identifiedd GCP, it
 threshold: The OpenCV function 'cv2.matchTemplate' when used with 'cv2.TM_CCOEFF_NORMED' returns a number between 0 and 1 indicating the confidence by which the two patches being compared matched successfully. A threshold is thus needed to prevent misidentification of other objects in the image as GCPs. (default :0.8, found experimentally; changing his parameter not recommended)
 
 check: Used to count the number of GCPs found in an image.
+
 angle: The difference (in degrees) between two subsequent rotated versions of the template.
 
 # How to run the code?
